@@ -1,0 +1,125 @@
+/* Estilos comunes para ambos formularios */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(18, 18, 18);
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(187, 133, 37, 0.2);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #EECD5C;
+  font-size: 28px;
+  background: -webkit-linear-gradient(90deg, rgba(238, 205, 92, 1) 0%, rgba(210, 166, 60, 1) 50%, rgba(187, 133, 37, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #EECD5C;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 1px solid #BB8525;
+  background-color: rgb(40, 40, 40);
+  color: aliceblue;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #EECD5C;
+  box-shadow: 0 0 0 2px rgba(238, 205, 92, 0.2);
+}
+
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #BB8525;
+  color: rgb(18, 18, 18);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background-color: #EECD5C;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #aaa;
+  font-size: 15px;
+}
+
+.auth-link {
+  color: #EECD5C;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #BB8525;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+  
+  .auth-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
